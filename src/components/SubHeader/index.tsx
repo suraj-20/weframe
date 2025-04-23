@@ -4,11 +4,11 @@ import { IoFilter } from "react-icons/io5";
 
 const SubHeader = () => {
   return (
-    <div className="m-5 flex items-center justify-end rounded-lg bg-white p-2 shadow-lg xs:flex-col xs:gap-3 sm:flex-row md:gap-6 lg:gap-10">
+    <div className="m-5 flex flex-wrap items-center justify-end gap-2 rounded-lg bg-white p-2 shadow-lg xs:flex-col xs:gap-3 sm:flex-row md:gap-6 lg:gap-10">
       {/* Left: Search bar + buttons */}
       <div className="sx:w-96 flex items-center gap-3">
         {/* Search bar */}
-        <div className="sm:w-50 flex items-center gap-2 rounded-lg border border-gray-200 bg-[#f8f9fb] px-4 py-2 text-sm text-gray-600 md:w-72">
+        <div className="w-30 flex items-center gap-2 rounded-lg border border-gray-200 bg-[#f8f9fb] px-4 py-2 text-sm text-gray-600 xs:w-full sm:w-full">
           <IoIosSearch className="text-gray-400" />
           <input
             type="text"
@@ -31,7 +31,7 @@ const SubHeader = () => {
       </div>
 
       {/* Right: Add Story */}
-      <button className="rounded-md bg-[#1C1442] text-xs font-medium text-white transition xs:p-3 sm:p-3 md:p-3 md:px-6 ">
+      <button className="rounded-md bg-[#1C1442] p-3 text-xs font-medium text-white transition">
         Add New Story
       </button>
     </div>

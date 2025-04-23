@@ -14,12 +14,12 @@ const StatusFilter = () => {
   const [activeStatus, setActiveStatus] = useState("All");
 
   return (
-    <div className="m-5 flex gap-2 bg-white">
+    <div className="m-5 flex flex-wrap gap-2 bg-white">
       {statuses.map((status) => (
         <button
           key={status.label}
           onClick={() => setActiveStatus(status.label)}
-          className={`rounded-md text-xs font-medium transition-all xs:p-2 sm:px-4 sm:py-2`}
+          className={`rounded-md p-2 text-xs font-medium transition-all`}
           style={{
             color: activeStatus === status.label ? "#fff" : "#374151",
             backgroundColor:
@@ -30,7 +30,7 @@ const StatusFilter = () => {
           <span
             className={`ml-1`}
             style={{
-              color: activeStatus === status.label ? "#fff" : "#9ca3af",
+              color: activeStatus === status.label ? "#fff" : "#A0A3BD",
             }}
           >
             ({status.count.toLocaleString()})

@@ -22,13 +22,11 @@ const Header = ({ heading }: { heading: String }) => {
             width={30}
           />
           <div className="text-left text-sm">
-            <p className="text-xs text-gray-400">Welcome back.</p>
+            <p className="text-xs text-gray-500">Welcome back.</p>
             <p className="font-medium text-gray-800">Akshita Patel</p>
           </div>
         </div>
-        <IoIosArrowDown
-          className="ml-2 h-4 w-4 text-gray-500"
-        />
+        <IoIosArrowDown className="ml-2 h-4 w-4 text-gray-500" />
       </div>
     </div>
   );
