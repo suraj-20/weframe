@@ -30,7 +30,7 @@ const StoryCard = ({ story }: { story: Story }) => {
       <div className="relative w-full overflow-hidden">
         <img
           src={story.image}
-          alt={story.title}
+          alt={story.category}
           className="h-full w-full object-cover"
         />
         <div className="absolute right-2 top-2 flex items-center gap-1 rounded-md bg-white px-2 py-1 text-xs shadow">
@@ -66,9 +66,7 @@ const StoryCard = ({ story }: { story: Story }) => {
               <button className="w-full rounded-md bg-[#E8E9FF] px-4 py-2 text-sm font-semibold text-black transition hover:opacity-90">
                 View
               </button>
-              <button
-                className="grid h-9 w-10 place-items-center rounded-md bg-[#FAFAFA] transition hover:opacity-90"
-              >
+              <button className="grid h-9 w-10 place-items-center rounded-md bg-[#FAFAFA] transition hover:opacity-90">
                 <span className="text-xl">⋯</span>
               </button>
             </div>

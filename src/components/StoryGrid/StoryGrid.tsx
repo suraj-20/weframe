@@ -8,7 +8,7 @@ const stories: Story[] = [
     category: "BUSINESS",
     date: "20 Sep 2022",
     status: "Published",
-    image: "/images/story1.png",
+    image: "/images/story1.avif",
     views: 428,
   },
   {
@@ -17,7 +17,7 @@ const stories: Story[] = [
     category: "BUSINESS",
     date: "20 Sep 2022",
     status: "Created",
-    image: "/images/story2.png",
+    image: "/images/story2.avif",
     views: 428,
   },
   {
@@ -26,7 +26,7 @@ const stories: Story[] = [
     category: "Politics",
     date: "20 Sep 2022",
     status: "Draft",
-    image: "/images/story3.png",
+    image: "/images/story3.avif",
     views: 428,
   },
   {
@@ -35,7 +35,7 @@ const stories: Story[] = [
     category: "BUSINESS",
     date: "20 Sep 2022",
     status: "Published",
-    image: "/images/story4.png",
+    image: "/images/story4.avif",
     views: 428,
   },
   {
@@ -44,7 +44,7 @@ const stories: Story[] = [
     category: "BUSINESS",
     date: "20 Sep 2022",
     status: "Published",
-    image: "/images/story5.png",
+    image: "/images/story5.avif",
     views: 428,
   },
   {
@@ -53,7 +53,7 @@ const stories: Story[] = [
     category: "BUSINESS",
     date: "20 Sep 2022",
     status: "Published",
-    image: "/images/story6.png",
+    image: "/images/story6.avif",
     views: 428,
   },
   {
@@ -62,7 +62,7 @@ const stories: Story[] = [
     category: "Politics",
     date: "20 Sep 2022",
     status: "Published",
-    image: "/images/story7.png",
+    image: "/images/story7.avif",
     views: 428,
   },
   {
@@ -71,7 +71,7 @@ const stories: Story[] = [
     category: "BUSINESS",
     date: "20 Sep 2022",
     status: "Published",
-    image: "/images/story5.png",
+    image: "/images/story5.avif",
     views: 428,
   },
 ];

@@ -18,8 +18,7 @@ const Header = ({ heading }: { heading: String }) => {
           <img
             src="/images/avatar.png"
             alt="User Avatar"
-            className="rounded-lg"
-            width={30}
+            className="h-8 w-8 rounded-lg"
           />
           <div className="text-left text-sm">
             <p className="text-xs text-gray-500">Welcome back.</p>
