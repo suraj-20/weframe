@@ -16,9 +16,9 @@ const Header = ({ heading }: { heading: String }) => {
       <div className="flex items-center rounded-lg border bg-white px-2 py-1 shadow-sm xs:gap-4 md:gap-6 lg:gap-8">
         <div className="flex items-center gap-2">
           <img
-            src="/images/avatar.png"
+            src="/images/avatar.avif"
             alt="User Avatar"
-            className="h-8 w-8 rounded-lg"
+            className="h-8 w-8 rounded-lg object-cover"
           />
           <div className="text-left text-sm">
             <p className="text-xs text-gray-500">Welcome back.</p>

@@ -8,12 +8,12 @@ const SubHeader = () => {
       {/* Left: Search bar + buttons */}
       <div className="sx:w-96 flex items-center gap-3">
         {/* Search bar */}
-        <div className="w-30 flex items-center gap-2 rounded-lg border border-gray-200 bg-[#f8f9fb] px-4 py-2 text-sm text-gray-600 xs:w-full sm:w-full">
+        <div className="w-25 flex items-center gap-2 rounded-lg border border-gray-200 bg-[#f8f9fb] px-4 py-2 text-sm text-gray-600 xs:w-full sm:w-full">
           <IoIosSearch className="text-gray-400" />
           <input
             type="text"
             placeholder="Search"
-            className="flex-1 bg-transparent text-sm placeholder-gray-400 outline-none"
+            className="w-full flex-1 bg-transparent text-sm placeholder-gray-400 outline-none"
           />
         </div>
 
