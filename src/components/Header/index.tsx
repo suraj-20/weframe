@@ -3,65 +3,31 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Header = ({ heading }: { heading: String }) => {
   return (
-    <div
-      className="flex justify-between items-center px-6 py-4 bg-white shadow-sm"
-      style={{
-        height: "60px",
-        boxShadow: "0 1px 1px rgba(0, 0, 0, 0.1)",
-        padding: "0px 30px",
-        position: "sticky",
-        top: "0",
-        zIndex: "10",
-        backgroundColor: "#ffffff",
-      }}
-    >
+    <div className="sticky top-0 z-10 flex items-center justify-between bg-white px-6 py-2 shadow-sm">
       {/* Left Side */}
-      <div className="flex items-center gap-2" style={{ gap: "10px" }}>
-        <FaArrowLeftLong
-          className="w-5 h-5 text-gray-800"
-          style={{ fontSize: "16px" }}
-        />
-        <h1
-          className="text-lg font-semibold text-gray-900"
-          style={{ fontSize: "25px" }}
-        >
+      <div className="flex items-center gap-2">
+        <FaArrowLeftLong className="h-5 w-5 text-lg text-gray-800" />
+        <h1 className="font-semibold text-gray-900 md:text-xl lg:text-2xl">
           {heading}
         </h1>
       </div>
 
       {/* Right Side */}
-      <div
-        className="flex items-center gap-2 border rounded-xl px-4 py-2 bg-white shadow-sm"
-        style={{
-          padding: "6px 10px",
-          gap: "3rem",
-          borderRadius: "8px",
-          borderColor: "#E5E7EB",
-        }}
-      >
-        <div className="flex items-center gap-2" style={{ gap: "10px" }}>
+      <div className="flex items-center rounded-lg border bg-white px-2 py-1 shadow-sm xs:gap-4 md:gap-6 lg:gap-8">
+        <div className="flex items-center gap-2">
           <img
             src="/images/avatar.png"
             alt="User Avatar"
-            className="rounded"
-            style={{ borderRadius: "10px" }}
+            className="rounded-lg"
             width={30}
           />
           <div className="text-left text-sm">
-            <p className="text-xs text-gray-400" style={{ fontSize: "8px" }}>
-              Welcome back.
-            </p>
-            <p
-              className="font-medium text-gray-800"
-              style={{ fontSize: "14px" }}
-            >
-              Akshita Patel
-            </p>
+            <p className="text-xs text-gray-400">Welcome back.</p>
+            <p className="font-medium text-gray-800">Akshita Patel</p>
           </div>
         </div>
         <IoIosArrowDown
-          className="w-4 h-4 text-gray-500 ml-2"
-          style={{ fontSize: "14px" }}
+          className="ml-2 h-4 w-4 text-gray-500"
         />
       </div>
     </div>

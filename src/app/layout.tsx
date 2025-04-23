@@ -18,15 +18,11 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <head />
       <body className={`bg-[#FCFCFC] dark:bg-black ${urbanist.className}`}>
-        <div className="relative h-screen flex">
+        <div className="relative flex h-screen">
           <Sidebar />
 
           {/* Main content: pushes right only on desktop */}
-          <main
-            className="flex-1 overflow-y-auto p-4"
-          >
-            {children}
-          </main>
+          <main className="flex-1 overflow-y-auto">{children}</main>
         </div>
       </body>
     </html>
