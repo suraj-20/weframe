@@ -68,16 +68,6 @@ const StoryCard = ({ story }: { story: Story }) => {
               </button>
               <button
                 className="grid h-9 w-10 place-items-center rounded-md bg-[#FAFAFA] transition hover:opacity-90"
-                style={
-                  {
-                    // backgroundColor: "#FAFAFA",
-                    // color: "#1C1442",
-                    // padding: "10px 20px",
-                    // border: "none",
-                    // borderRadius: "8px",
-                    // fontSize: "14px",
-                  }
-                }
               >
                 <span className="text-xl">⋯</span>
               </button>

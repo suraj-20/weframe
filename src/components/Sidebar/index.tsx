@@ -57,6 +57,7 @@ const Sidebar = () => {
             }}
           >
             <RxHamburgerMenu />
+            <span className="hidden">Menu</span>
           </button>
         )}
         <nav className="flex flex-col">

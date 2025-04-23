@@ -20,11 +20,13 @@ const SubHeader = () => {
         {/* Calendar Button */}
         <button className="rounded-md bg-[#f1f2f6] p-3 transition hover:bg-gray-200">
           <FaCalendarAlt />
+          <span className="hidden">Calendar</span>
         </button>
 
         {/* Filter Button */}
         <button className="rounded-md bg-[#f1f2f6] p-3 transition hover:bg-gray-200">
           <IoFilter />
+          <span className="hidden">Filter</span>
         </button>
       </div>
 
