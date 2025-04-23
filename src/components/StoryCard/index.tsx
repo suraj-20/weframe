@@ -26,69 +26,34 @@ const statusTextColors = {
 
 const StoryCard = ({ story }: { story: Story }) => {
   return (
-    <div className="rounded-xl overflow-hidden bg-white shadow-md flex flex-col">
-      <div className="relative h-60 w-full overflow-hidden">
+    <div className="flex flex-col overflow-hidden rounded-xl bg-white shadow-md">
+      <div className="relative w-full overflow-hidden">
         <img
           src={story.image}
           alt={story.title}
           className="h-full w-full object-cover"
         />
-        <div
-          className="absolute top-2 right-2 bg-white px-2 py-1 text-xs flex items-center gap-1 shadow"
-          style={{
-            top: "5px",
-            right: "5px",
-            padding: "4px 8px",
-            borderRadius: "6px",
-            backgroundColor: "#fff",
-            fontSize: "12px",
-            gap: "2px",
-          }}
-        >
+        <div className="absolute right-2 top-2 flex items-center gap-1 rounded-md bg-white px-2 py-1 text-xs shadow">
           <Eye size={14} />
           {story.views}
         </div>
 
-        <div
-          className="absolute p-4 flex-1 flex flex-col justify-between"
-          style={{ padding: "10px", bottom: "0px", color: "#fff", gap: "10px" }}
-        >
+        <div className="absolute bottom-0 flex flex-1 flex-col justify-between gap-2 p-4">
           <div>
-            <h2
-              className="text-sm font-semibold text-white leading-snug line-clamp-2"
-              style={{ fontSize: "20px" }}
-            >
+            <h2 className="line-clamp-2 text-lg font-semibold leading-snug text-white">
               {story.title}
             </h2>
-            <div
-              className="text-xs text-white mt-2 flex items-center gap-2"
-              style={{ fontSize: "14px", justifyContent: "space-between" }}
-            >
-              <span
-                className="uppercase font-bold"
-                style={{ fontWeight: "600" }}
-              >
-                {story.category}
-              </span>
+            <div className="mt-2 flex items-center justify-between gap-2 text-xs text-white">
+              <span className="font-bold uppercase">{story.category}</span>
 
-              <span
-                className="flex items-center "
-                style={{ fontWeight: "800", gap: "5px", color: "#A0A3BD" }}
-              >
-                <span style={{ fontSize: "25px" }}>•</span> {story.date}
+              <span className="flex items-center gap-1 font-semibold text-gray-400">
+                <span className="text-3xl">•</span> {story.date}
               </span>
               <span
-                className={`text-xs px-2 py-1 rounded-md font-medium ${
-                  statusColors[story.status]
-                }`}
+                className={`rounded-md px-3 py-2 text-sm font-medium font-semibold`}
                 style={{
                   backgroundColor: statusColors[story.status].split(" ")[0],
                   color: statusTextColors[story.status].split(" ")[0],
-                  padding: "8px 16px",
-                  border: "none",
-                  borderRadius: "8px",
-                  fontSize: "14px",
-                  fontWeight: "700",
                 }}
               >
                 {story.status}
@@ -96,31 +61,23 @@ const StoryCard = ({ story }: { story: Story }) => {
             </div>
           </div>
 
-          <div className="mt-4 flex justify-between items-center">
-            <div className="w-full flex gap-2" style={{ gap: "10px" }}>
-              <button
-                className="w-full text-black text-sm px-4 py-2 rounded-md hover:opacity-90 transition"
-                style={{
-                  backgroundColor: "#E8E9FF",
-                  color: "#1C1442",
-                  border: "none",
-                  borderRadius: "8px",
-                  fontSize: "12px",
-                  fontWeight: "600",
-                }}
-              >
+          <div className="mt-4 flex items-center justify-between">
+            <div className="flex w-full gap-2">
+              <button className="w-full rounded-md bg-[#E8E9FF] px-4 py-2 text-sm font-semibold text-black transition hover:opacity-90">
                 View
               </button>
               <button
-                className="w-8 h-8 rounded-md grid place-items-center hover:opacity-90 transition"
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  color: "#1C1442",
-                  padding: "10px 20px",
-                  border: "none",
-                  borderRadius: "8px",
-                  fontSize: "14px",
-                }}
+                className="grid h-9 w-10 place-items-center rounded-md bg-[#FAFAFA] transition hover:opacity-90"
+                style={
+                  {
+                    // backgroundColor: "#FAFAFA",
+                    // color: "#1C1442",
+                    // padding: "10px 20px",
+                    // border: "none",
+                    // borderRadius: "8px",
+                    // fontSize: "14px",
+                  }
+                }
               >
                 <span className="text-xl">⋯</span>
               </button>

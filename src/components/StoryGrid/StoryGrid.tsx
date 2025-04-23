@@ -79,10 +79,8 @@ const stories: Story[] = [
 const StoryGrid = () => {
   return (
     <div
-      className="px-6 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      className="m-5 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       style={{
-        margin: "20px",
-        gap: "20px",
         gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
       }}
     >

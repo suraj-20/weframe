@@ -14,24 +14,16 @@ const StatusFilter = () => {
   const [activeStatus, setActiveStatus] = useState("All");
 
   return (
-    <div
-      className="flex gap-2 px-6 py-4 bg-white"
-      style={{ gap: "10px", margin: "20px" }}
-    >
+    <div className="m-5 flex gap-2 bg-white">
       {statuses.map((status) => (
         <button
           key={status.label}
           onClick={() => setActiveStatus(status.label)}
-          className={`px-4 py-2 rounded-md text-sm font-medium transition-all`}
+          className={`rounded-md text-xs font-medium transition-all xs:p-2 sm:px-4 sm:py-2`}
           style={{
             color: activeStatus === status.label ? "#fff" : "#374151",
             backgroundColor:
               activeStatus === status.label ? "#1b0a57" : "#f1f2f6",
-            padding: "12px 15px",
-            border: "none",
-            borderRadius: "8px",
-            fontSize: "12px",
-            fontWeight: "600",
           }}
         >
           {status.label}{" "}
