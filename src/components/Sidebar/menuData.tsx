@@ -10,7 +10,7 @@ import { FaRegBell } from "react-icons/fa";
 import { MdOutlineSubscriptions } from "react-icons/md";
 
 const navLinks = [
-  { label: "Dashboard", href: "/dashboard", icon: <RiHome5Line /> },
+  { label: "Dashboard", href: "/", icon: <RiHome5Line /> },
   { label: "Content", href: "/content", icon: <PiNote /> },
   { label: "User", href: "/user", icon: <TbUserSquareRounded /> },
   { label: "Task", href: "/task", icon: <HiOutlineUsers /> },
